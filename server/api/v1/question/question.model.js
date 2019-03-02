@@ -56,7 +56,7 @@ questionSchema.path('options').validate({
     },
     message: 'Each question must have 4 options'
 });
-/*questionSchema.pre('save',function (next) {
+questionSchema.pre('save',function (next) {
     var _this = this;
     console.log(_this);
     Category.findOneAndUpdate(
@@ -71,5 +71,5 @@ questionSchema.path('options').validate({
             }
         })
     .catch(err => next(err));
-});*/
+});
 module.exports = mongoose.model('Question',questionSchema);
