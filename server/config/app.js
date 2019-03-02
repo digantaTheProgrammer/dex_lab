@@ -17,7 +17,7 @@ const CONFIGURATION = {
 };
 
 mongoose.Promise = global.Promise;
-mongoose.connection.openUri(process.env.DB_URI || "mongodb://admin1:admin123@cluster0-shard-00-00-jou1m.mongodb.net:27017,cluster0-shard-00-01-jou1m.mongodb.net:27017,cluster0-shard-00-02-jou1m.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true", {config: {autoIndex: false}});
+mongoose.connection.openUri(process.env.DB_URI || "mongodb://admin1:<admin123>@cluster0-shard-00-00-axgrd.mongodb.net:27017,cluster0-shard-00-01-axgrd.mongodb.net:27017,cluster0-shard-00-02-axgrd.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true", {config: {autoIndex: false}});
 mongoose.connection.on('error', function(err) {
   console.log('MongoDB Connection Error');
   process.exit(-1);
