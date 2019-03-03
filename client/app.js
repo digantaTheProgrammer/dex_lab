@@ -76,7 +76,10 @@ function question() {
     $("#showQuestion").click(function (e) {
         e.preventDefault();
         fetch('/api/v1/question/read', {
-            method: 'GET'
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({qcategory : ""})
+            
         }) .then(function (res) {
             return res.json();
         }) .then(function (data) {
