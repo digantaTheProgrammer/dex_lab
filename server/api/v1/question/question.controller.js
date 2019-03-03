@@ -23,7 +23,7 @@ module.exports.read = function(req, res, next) {
         "questionText answer category difficultyLevel options questionActive",
         function(err, data) {
             if (err) {
-            console.log("Question read fail"):
+            console.log("Question read fail");
                 err.status = 406;
                 return next(err);
             }
