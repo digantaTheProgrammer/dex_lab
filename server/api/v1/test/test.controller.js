@@ -36,6 +36,7 @@ module.exports.show = function(req, res, next) {
             return next(err);
         }
         console.log("SUCCESS");
+        console.log(data:doc);
 
         return res.status(200).json({ message: "Query successful", data: doc });
     });
