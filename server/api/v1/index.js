@@ -14,7 +14,7 @@ router.get('/users', UserController.all);
 router.post('/user/add', UserController.add);
 router.post('/user/edit', UserController.edit);
 router.post('/user/updateScore', UserController.updateScore);
-router.get('/create', UserController.create);
+//router.get('/create', UserController.create);
 router.post('/user/login/', UserController.login);
 router.delete('/user/:uid', UserController.deactivate);
 router.get('/test',UserController.test);
@@ -30,7 +30,6 @@ router.post('/category/delete', CategoryController.delete);
 //router.get('/question/:qid', QuestionController);
 router.post('/question/add', QuestionController.add);
 router.get('/question/get/:qcategory', QuestionController.read);
-router.get('/question/read', QuestionController.read);
 router.get('/question/show', QuestionController.read); //show all questions
 router.post('/question/edit', QuestionController.edit);
 router.post('/question/delete', QuestionController.delete);

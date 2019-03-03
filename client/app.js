@@ -77,7 +77,7 @@ function question() {
         e.preventDefault();
         fetch('/api/v1/question/read', {
             method: 'GET'
-        }).then(function (res) {
+        }) .then(function (res) {
             return res.json();
         }) .then(function (data) {
             console.log(data.data);
@@ -106,6 +106,7 @@ function question() {
                 console.log(test);
             });
 
+           console.log(data.data);
         });
 
 }
