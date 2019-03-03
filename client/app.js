@@ -80,7 +80,7 @@ function question() {
         }) .then(function (res) {
             return res.json();
         }) .then(function (data) {
-            console.log(data.data);
+            console.log(data);
             data.data.forEach(function (q) {
                 var res = q;
                 for (var key in res) {
