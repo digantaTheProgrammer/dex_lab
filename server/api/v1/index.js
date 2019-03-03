@@ -30,6 +30,7 @@ router.post('/category/delete', CategoryController.delete);
 //router.get('/question/:qid', QuestionController);
 router.post('/question/add', QuestionController.add);
 router.get('/question/get/:qcategory', QuestionController.read);
+router.get('/question/read', QuestionController.read);
 router.get('/question/show', QuestionController.read); //show all questions
 router.post('/question/edit', QuestionController.edit);
 router.post('/question/delete', QuestionController.delete);
