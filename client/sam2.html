@@ -6,7 +6,7 @@ function exec()
 fetch('/api/v1/test/add', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({category: "finance" , questions: "5c7ad544a2a6cc0004d1e12b"})
+            body: JSON.stringify({category: "finance" , questions: ["5c7ad544a2a6cc0004d1e12b","5c7ad548a2a6cc0004d1e12c","5c7b1baaca5d760004a262fb"]})
         })
             .then(function (res) {
                 alert(res.json());

@@ -34,7 +34,6 @@ module.exports.show = function(req, res, next) {
             err.status = 406;
             return next(err);
         }
-        console.log("QUERRY SUCCESSSFULLY RETYTTIR");
 
         return res.status(200).json({ message: "Query successful", data: doc });
     });
