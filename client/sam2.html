@@ -1,13 +1,12 @@
-
 <html>
 <head>
 <script>
 function exec()
 {
-fetch('/api/v1/category/add', {
+fetch('/api/v1/test/add', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({name: "finance"})
+            body: JSON.stringify({category: "finance" , questions: "5c7ad544a2a6cc0004d1e12b"})
         })
             .then(function (res) {
                 alert(res.json());
