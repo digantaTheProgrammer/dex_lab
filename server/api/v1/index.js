@@ -29,6 +29,7 @@ router.post('/category/delete', CategoryController.delete);
 //Question API
 //router.get('/question/:qid', QuestionController);
 router.post('/question/add', QuestionController.add);
+router.get('/question/read',QuestionController.read);
 router.get('/question/get/:qcategory', QuestionController.read);
 router.get('/question/show', QuestionController.read); //show all questions
 router.post('/question/edit', QuestionController.edit);
