@@ -141,7 +141,7 @@ quizApp.controller('test', ['$scope', '$http', '$routeParams', '$window', '$time
         };
 
         $scope.categoryName = $routeParams.name;
-        $http.get(`/api/v1/test/show/${$scope.categoryName}`)
+        $http.get('/api/v1/test/show/${$scope.categoryName}')
             .then(function successCallback(response) {
 
                 main.response = response.data.data;
