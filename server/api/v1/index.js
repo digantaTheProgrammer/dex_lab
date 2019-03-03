@@ -44,6 +44,6 @@ router.get('/test/show/:name', TestController.show);
 router.post('/test/delete', TestController.delete);
 router.post('/test/edit', TestController.edit);
 router.get('/test/new/:name', TestController.new); //generate test automatically
-router.get('/test/test',TestController.test);
+//router.get('/test/test',TestController.test);
 
 module.exports = router;
