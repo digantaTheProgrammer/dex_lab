@@ -106,7 +106,6 @@ function question() {
                 console.log(test);
             });
 
-           console.log(data.data);
         });
 
 }
