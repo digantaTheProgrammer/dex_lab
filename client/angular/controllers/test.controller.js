@@ -143,6 +143,7 @@ quizApp.controller('test', ['$scope', '$http', '$routeParams', '$window', '$time
         $scope.categoryName = $routeParams.name;
         $http.get('/api/v1/test/show/finance')
             .then(function successCallback(response) {
+            console.log(response.data);
                 main.response = response.data.data;
                 main.seconds = 30;
                 $scope.timer();
