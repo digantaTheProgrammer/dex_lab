@@ -31,9 +31,11 @@ module.exports.add = function(req, res, next) {
 module.exports.show = function(req, res, next) {
     Test.findOne({ category: req.params.name }, function(err, doc) {
         if (err) {
+        console.log("FAILED");
             err.status = 406;
             return next(err);
         }
+        console.log("SUCCESS");
 
         return res.status(200).json({ message: "Query successful", data: doc });
     });
