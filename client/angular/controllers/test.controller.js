@@ -146,7 +146,7 @@ quizApp.controller('test', ['$scope', '$http', '$routeParams', '$window', '$time
                 main.response = response.data.data;
                 delete main.response.questions;
                 main.response.questions=[];
-                main.response.questions[0].questionText="Supposed Question !!!";
+                main.response.questions[0]={"questionText" : "Supposed Question !!!"};
                 main.seconds = 30;
                 console.log(main.response);
                 $scope.timer();
