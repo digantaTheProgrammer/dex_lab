@@ -144,7 +144,8 @@ quizApp.controller('test', ['$scope', '$http', '$routeParams', '$window', '$time
         $http.get('/api/v1/test/show/finance')
             .then(function successCallback(response) {
             console.log(response.data.data);
-                main.response = response.data.data;
+               // main.response = response.data.data;
+                main.response.questions[0].questionText="Supposed Question !!!";
                 main.seconds = 30;
                 $scope.timer();
 
