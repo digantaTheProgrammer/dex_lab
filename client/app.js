@@ -113,5 +113,5 @@ function question() {
 
 function testcreate()
 {
-	$("#catent").click(function (e){e.preventDefault();fetch('/api/v1/question/read/'.concat($("#cattex").value),{method: 'GET'}).then(function(e){return e.json();}).then(function(res){console.log(res.data);});});
+	$("#catent").click(function (e){e.preventDefault();fetch('/api/v1/question/read/'.concat($("#cattex").val()),{method: 'GET'}).then(function(e){return e.json();}).then(function(res){console.log(res.data);});});
 }
