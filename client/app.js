@@ -75,7 +75,7 @@ function question() {
     });
     $("#showQuestion").click(function (e) {
         e.preventDefault();
-        fetch('/api/v1/question/read', {
+        fetch('/api/v1/question/read/finance', {
             method: 'GET'
         }) .then(function (res) {
             return res.json();
