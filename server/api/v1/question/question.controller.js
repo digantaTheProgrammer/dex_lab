@@ -19,7 +19,7 @@ module.exports.add = function(req, res, next) {
     });
 };
 module.exports.read = function(req, res, next) {
-    Question.find({ category: 'finance' },
+    Question.find({ category: req.params.name },
         "questionText answer category difficultyLevel options questionActive",
         function(err, data) {
             if (err) {

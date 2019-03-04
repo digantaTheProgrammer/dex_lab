@@ -110,3 +110,8 @@ function question() {
         });
 
 }
+
+function testcreate()
+{
+	$("#catent").click(function (e){e.preventDefault();fetch('/api/v1/question/read',{method: 'GET'});});
+}
